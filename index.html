@@ -8,7 +8,7 @@
 
     <title>Health Web</title>
 
-    <!-- Styles -->
+
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@500&display=swap" rel="stylesheet">
@@ -17,15 +17,14 @@
     <link href="css/swiper.css" rel="stylesheet">
     <link href="css/styles.css" rel="stylesheet">
     <link rel="icon" href="images/logo.svg">
-    <!-- <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
-        integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous"> -->
+
 </head>
 
 <body>
 
 
     <nav id="navbar" class="navbar navbar-expand-lg fixed-top navbar-light" aria-label="Main navigation">
-        <div class="container">
+        <div class="container ">
 
 
             <a class="navbar-brand logo-image" href="index.html" style="color:#198754; font-size:1.6rem;"><i
@@ -49,17 +48,18 @@
                     <li class="nav-item">
                         <a class="nav-link" href="#services">BMR Calculator</a>
                     </li>
+
+                    <li class="nav-item">
+                        <a class="btn-outline-sm contactlink" href="#contact">Contact us</a>
+                    </li>
+
                 </ul>
-                <span class="nav-item">
-                    <a class="btn-outline-sm" href="#contact">Contact us</a>
-                </span>
-            </div> <!-- end of navbar-collapse -->
-        </div> <!-- end of container -->
-    </nav> <!-- end of navbar -->
-    <!-- end of navigation -->
+            </div>
+        </div>
+    </nav>
 
 
-    <!-- Header -->
+
     <header id="header" class="header">
         <img class="decoration-star" src="images/decoration-star.svg" alt="alternative">
         <img class="decoration-star-2" src="images/decoration-star.svg" alt="alternative">
@@ -71,8 +71,8 @@
                                 style="color:#198754; font-size: 75px;padding:10px;"></i></h1>
                         <p class="p-large">Calculate your BMI (body mass index) by using the form below. Enter your
                             weight and height and click the Calculate button to display your BMI result.</p>
-                    </div> <!-- end of text-container -->
-                </div> <!-- end of col -->
+                    </div>
+                </div>
                 <div class="col-lg-6 col-xl-7 bmileft">
 
                     <form action="none" method="post" name="bmiform" style="margin-top:90px;">
@@ -92,64 +92,61 @@
                                 value="Calculate your BMI" onclick="calcBMI()">Calculate your BMI</button>
                         </fieldset>
                         <fieldset class="fieldsett">
-                            <legend class="bmiheading">BMI</legend>
                             <label for="bmi" class="labell " id="bmi_label" style="width:200px;">
-                                <p>Your calculated BMI is: </p>
+                                <p style="font-weight: 900;">Your calculated BMI is: </p>
                             </label>
-                            <input type="text" name="bmi" id="bmi" readonly="readonly" class="inputt">
+                            <input type="text" name="bmi" id="bmi" readonly="readonly" class="inputt"
+                                style="border: 3px; font-size:35px;">
                         </fieldset>
                     </form>
 
-                </div> <!-- end of col -->
-            </div> <!-- end of row -->
+                </div>
+            </div>
             <div style="margin-top:100px;">
                 <img class="img-fluid" src="images/bmi.jpg" alt="alternative">
             </div>
-        </div> <!-- end of container -->
-    </header> <!-- end of header -->
-    <!-- end of header -->
+        </div>
+    </header>
 
 
-    <!-- Statistics -->
+
     <div class="counter">
         <div class="container">
             <div class="row">
                 <div class="col-lg-12">
 
-                    <!-- Counter -->
+
                     <div class="counter-container">
                         <div class="counter-cell">
                             <div data-purecounter-start="0" data-purecounter-end="31" data-purecounter-duration="3"
                                 class="purecounter">1</div>
                             <div class="counter-info">percent adults obese.</div>
-                        </div> <!-- end of counter-cell -->
+                        </div>
                         <div class="counter-cell">
                             <div data-purecounter-start="0" data-purecounter-end="39" data-purecounter-duration="2"
                                 class="purecounter">1</div>
                             <div class="counter-info">million children under the age of 5 were overweight or obese in
                                 2020.</div>
-                        </div> <!-- end of counter-cell -->
+                        </div>
                         <div class="counter-cell">
                             <div data-purecounter-start="0" data-purecounter-end="340" data-purecounter-duration="1"
                                 class="purecounter">1</div>
                             <div class="counter-info">million children and adolescents aged 5-19 were overweight or
                                 obese in 2016.</div>
-                        </div> <!-- end of counter-cell -->
+                        </div>
                         <div class="counter-cell">
                             <div data-purecounter-start="0" data-purecounter-end="95" data-purecounter-duration="3"
                                 class="purecounter">1</div>
                             <div class="counter-info">percent of the world’s population has health problems.</div>
-                        </div> <!-- end of counter-cell -->
-                    </div> <!-- end of counter-container -->
-                    <!-- end of counter -->
+                        </div>
+                    </div>
 
-                </div> <!-- end of col -->
-            </div> <!-- end of row -->
-        </div> <!-- end of container -->
-    </div> <!-- end of counter -->
-    <!-- end of statistics -->
 
-    <!-- Details 1 -->
+                </div>
+            </div>
+        </div>
+    </div>
+
     <div class="basic-3 bg-gray" id="projects">
         <img class="decoration-star" src="images/decoration-star.svg" alt="alternative">
         <div class="container">
@@ -182,18 +179,17 @@
                             beans, lentils, oats, wheat, bananas, mangoes, quinoa, potatoes, breads, pastas, baked goods
                         </p>
 
-                    </div> <!-- end of text-container -->
-                </div> <!-- end of col -->
+                    </div>
+                </div>
                 <div class="col-lg-6 col-xl-5" style="margin-top:10rem;">
                     <div class="image-container ">
                         <img class="img-fluid" src="images/details-2.png" alt="alternative">
-                    </div> <!-- end of image-container -->
-                </div> <!-- end of col -->
-            </div> <!-- end of row -->
-        </div> <!-- end of container -->
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
-    <!-- end of basic-2 -->
-    <!-- end of details 1 -->
+
     <div id="details" class="basic-2">
         <img class="decoration-star" src="images/decoration-star.svg" alt="alternative">
         <div class="container">
@@ -201,13 +197,13 @@
                 <div class="col-lg-6 col-xl-5">
                     <div class="image-container">
                         <img class="img-fluid" src="images/details-1.png" alt="alternative">
-                    </div> <!-- end of image-container -->
-                </div> <!-- end of col -->
+                    </div>
+                </div>
                 <div class="col-lg-6 col-xl-7">
                     <div class="text-container">
                         <div class='app'>
                             <div class='containerr'>
-                                <h1 class='title'>Nutrition Calculator</h1>
+                                <h1 class='titlee'>Nutrition Calculator</h1>
                                 <p class='instructions'>Enter the grams of each macro below</p>
                                 <div class='inputs'>
                                     <div class='inputBlock text-green'>
@@ -224,7 +220,7 @@
                                     </div>
                                 </div>
                                 <div class='results'>
-                                    <h1 class='title'>Breakdown</h1>
+                                    <h1 style="margin-top:60px; margin-bottom: 20px;">Breakdown</h1>
                                     <div class='stats'>
                                         <div class='statBlock'>
                                             <h3 class="text-green h33">FAT</h3>
@@ -246,18 +242,12 @@
                                 </div>
                             </div>
                         </div>
-                    </div> <!-- end of text-container -->
-                </div> <!-- end of col -->
-            </div> <!-- end of row -->
-        </div> <!-- end of container -->
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
 
-    <!-- Services -->
-
-
-
-
-    <!-- Details 2 -->
 
     <div id="services" class="cards-1 bg-gray">
         <div class="container">
@@ -286,7 +276,7 @@
                             </div>
                             <div class="card card-body text-center mt-5" style="width:100%;">
                                 <form id="UI-form">
-                                    <!--Age-->
+
                                     <div class="form-group">
                                         <div class="input-group">
                                             <span class="input-group-text">Age</span>
@@ -294,7 +284,7 @@
                                                 placeholder="Enter age..." min="1" max="99" required>
                                         </div>
                                     </div>
-                                    <!--Weight-->
+
                                     <div class="form-group">
                                         <div class="input-group">
                                             <span class="input-group-text">Weight (kgs)</span>
@@ -302,7 +292,7 @@
                                                 placeholder="Enter weight..." min="30" max="300" step="0.1" required>
                                         </div>
                                     </div>
-                                    <!--Height-->
+
                                     <div class="form-group">
                                         <div class="input-group">
                                             <span class="input-group-text">Height (cm)</span>
@@ -310,7 +300,7 @@
                                                 placeholder="Enter height..." min="50" max="220" required>
                                         </div>
                                     </div>
-                                    <!--Gender-->
+
                                     <div class="form-group">
                                         <div class="input-group">
                                             <span class="input-group-text">Gender</span>
@@ -320,7 +310,7 @@
                                             </select>
                                         </div>
                                     </div>
-                                    <!--Activity level-->
+
                                     <div class="form-group">
                                         <div class="input-group">
                                             <span class="input-group-text">Activity</span>
@@ -340,7 +330,7 @@
                                     </div>
                                 </form>
 
-                                <!--Results-->
+
                                 <div id="results" style="display:none;">
                                     <h2>Results</h2>
                                     <div class="form-group">
@@ -366,86 +356,77 @@
             </div>
         </div>
     </div>
-    <!-- end of basic-3 -->
-    <!-- end of details 2 -->
 
-
-
-    <!-- Testimonials -->
     <div class="slider-1">
         <img class="quotes-decoration" src="images/quotes.svg" alt="alternative">
         <div class="container">
             <div class="row">
                 <div class="col-lg-12">
 
-                    <!-- Card Slider -->
                     <div class="slider-container">
                         <div class="swiper-container card-slider">
                             <div class="swiper-wrapper">
 
-                                <!-- Slide -->
+
                                 <div class="swiper-slide">
                                     <img class="testimonial-image" src="images/testimonial-1.jpg" alt="alternative">
                                     <p class="testimonial-text">“The doctor of the future will give no medicine, but
                                         will instruct his patients in care of the human frame, in diet, and in the
                                         cause and prevention of disease.” </p>
                                     <div class="testimonial-author">Thomas Edison</div>
-                                </div> <!-- end of swiper-slide -->
-                                <!-- end of slide -->
+                                </div>
 
-                                <!-- Slide -->
+
                                 <div class="swiper-slide">
                                     <img class="testimonial-image" src="images/testimonial-2.jpg" alt="alternative">
                                     <p class="testimonial-text">
                                         “The cheerful mind perseveres, and the strong mind hews its way through a
                                         thousand difficulties.”</p>
                                     <div class="testimonial-author">Swami Vivekananda</div>
-                                </div> <!-- end of swiper-slide -->
-                                <!-- end of slide -->
+                                </div>
 
-                                <!-- Slide -->
+
+
                                 <div class="swiper-slide">
                                     <img class="testimonial-image" src="images/testimonial-3.jpg" alt="alternative">
                                     <p class="testimonial-text">“To keep the body in good health is a duty…otherwise
                                         we shall not be able to keep the mind strong and clear.”</p>
                                     <div class="testimonial-author">Buddha</div>
-                                </div> <!-- end of swiper-slide -->
-                                <!-- end of slide -->
+                                </div>
 
-                            </div> <!-- end of swiper-wrapper -->
+                            </div>
 
-                            <!-- Add Arrows -->
+
                             <div class="swiper-button-next"></div>
                             <div class="swiper-button-prev"></div>
-                            <!-- end of add arrows -->
-
-                        </div> <!-- end of swiper-container -->
-                    </div> <!-- end of slider-container -->
-                    <!-- end of card slider -->
-
-                </div> <!-- end of col -->
-            </div> <!-- end of row -->
-        </div> <!-- end of container -->
-    </div> <!-- end of slider-1 -->
-    <!-- end of testimonials -->
 
 
-    <!-- Contact -->
+                        </div>
+                    </div>
+
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
     <div id="contact" class="form-1 bg-gray">
         <img class="decoration-star" src="images/decoration-star.svg" alt="alternative">
         <img class="decoration-star-2" src="images/decoration-star.svg" alt="alternative">
         <div class="container">
             <div class="row">
                 <div class="col-lg-6">
-                    <div class="image-container">
-                        <img class="img-fluid" src="images/contact.png" alt="alternative">
-                    </div> <!-- end of image-container -->
-                </div> <!-- end of col -->
+                    <div class="image-container" style="margin-top:15%;">
+                        <img class="img-fluid" src="images/contact.jpg" alt="alternative">
+                    </div>
+                </div>
                 <div class="col-lg-6">
                     <div class="text-container">
                         <h2>Contact Us</h2>
 
-                        <!-- Contact Form -->
                         <form>
                             <div class="form-group">
                                 <input type="text" class="form-control-input" placeholder="Name" required>
@@ -460,67 +441,41 @@
                                 <button type="submit" class="form-control-submit-button">Submit</button>
                             </div>
                         </form>
-                        <!-- end of contact form -->
-                    </div> <!-- end of text-container -->
-                </div> <!-- end of col -->
-            </div> <!-- end of row -->
-        </div> <!-- end of container -->
-    </div> <!-- end of form-1 -->
-    <!-- end of contact -->
 
-
-    <!-- Footer -->
-    <!-- <div class="footer bg-gray">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-12">
-                    <div class="footer-col first">
-                    </div> 
-                    <div class="footer-col third">
-                        <span class="fa-stack">
-                            <a href="#your-link">
-                                <i class="fas fa-circle fa-stack-2x"></i>
-                                <i class="fab fa-twitter fa-stack-1x"></i>
-                            </a>
-                        </span>
-                        <span class="fa-stack">
-                            <a href="#your-link">
-                                <i class="fas fa-circle fa-stack-2x"></i>
-                                <i class="fab fa-instagram fa-stack-1x"></i>
-                            </a>
-                        </span>
-                    </div> 
-                </div> 
-            </div> 
+                    </div>
+                </div>
+            </div>
         </div>
-    </div>  -->
+    </div>
 
 
 
-    <!-- Copyright -->
+
+
     <div class="copyright bg-gray">
         <div class="container">
             <div class="row">
                 <div class="col-lg-12">
                     <p class="p-small">Copyright © <a href="#header">Health Web</a></p>
-                </div> <!-- end of col -->
-            </div> <!-- enf of row -->
-        </div> <!-- end of container -->
+                    <p class="p-small">Made by Abhinav Lodha and Yavisht Gupta</p>
+                </div>
+            </div>
+        </div>
     </div>
 
 
 
-    <!-- Back To Top Button -->
+
     <button onclick="topFunction()" id="myBtn">
         <img src="images/up-arrow.png" alt="alternative">
     </button>
-    <!-- end of back to top button -->
 
-    <!-- Scripts -->
-    <script src="js/bootstrap.min.js"></script> <!-- Bootstrap framework -->
-    <script src="js/swiper.min.js"></script> <!-- Swiper for image and text sliders -->
-    <script src="js/purecounter.min.js"></script> <!-- Purecounter counter for statistics numbers -->
-    <script src="js/scripts.js"></script> <!-- Custom scripts -->
+
+
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/swiper.min.js"></script>
+    <script src="js/purecounter.min.js"></script>
+    <script src="js/scripts.js"></script>
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
         integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous">
     </script>

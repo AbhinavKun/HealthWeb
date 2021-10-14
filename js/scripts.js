@@ -1,6 +1,6 @@
 window.onscroll = function () {
 	scrollFunction();
-	scrollFunctionBTT(); // back to top button
+	scrollFunctionBTT();
 };
 
 window.onload = function () {
@@ -15,7 +15,7 @@ function scrollFunction() {
 	}
 }
 
-// Navbar on mobile
+
 let elements = document.querySelectorAll(".nav-link:not(.dropdown-toggle)");
 
 for (let i = 0; i < elements.length; i++) {
@@ -28,7 +28,7 @@ document.querySelector(".navbar-toggler").addEventListener("click", () => {
 	document.querySelector(".offcanvas-collapse").classList.toggle("open");
 });
 
-// Hover on desktop
+
 function toggleDropdown(e) {
 	const _d = e.target.closest(".dropdown");
 	let _m = document.querySelector(".dropdown-menu", _d);
@@ -45,14 +45,14 @@ function toggleDropdown(e) {
 	);
 }
 
-// On hover
+
 const dropdownCheck = document.querySelector('.dropdown');
 
 if (dropdownCheck !== null) {
 	document.querySelector(".dropdown").addEventListener("mouseleave", toggleDropdown);
 	document.querySelector(".dropdown").addEventListener("mouseover", toggleDropdown);
 
-	// On click
+
 	document.querySelector(".dropdown").addEventListener("click", (e) => {
 		const _d = e.target.closest(".dropdown");
 		let _m = document.querySelector(".dropdown-menu", _d);
@@ -67,7 +67,6 @@ if (dropdownCheck !== null) {
 }
 
 
-/* Card Slider - Swiper */
 var cardSlider = new Swiper('.card-slider', {
 	autoplay: {
 		delay: 4000,
@@ -81,11 +80,8 @@ var cardSlider = new Swiper('.card-slider', {
 });
 
 
-/* Back To Top Button */
-// Get the button
 myButton = document.getElementById("myBtn");
 
-// When the user scrolls down 20px from the top of the document, show the button
 function scrollFunctionBTT() {
 	if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
 		myButton.style.display = "block";
@@ -94,10 +90,10 @@ function scrollFunctionBTT() {
 	}
 }
 
-// When the user clicks on the button, scroll to the top of the document
+
 function topFunction() {
-	document.body.scrollTop = 0; // for Safari
-	document.documentElement.scrollTop = 0; // for Chrome, Firefox, IE and Opera
+	document.body.scrollTop = 0;
+	document.documentElement.scrollTop = 0;
 }
 
 
@@ -157,9 +153,9 @@ document.querySelectorAll('.nutritionInput').forEach(function (elm) {
 
 
 document.getElementById('UI-form').addEventListener('submit', function (e) {
-	//Hide results 
+
 	document.getElementById('results').style.display = 'none';
-	//Show loader
+
 	setTimeout(result, 1500);
 
 
@@ -176,11 +172,9 @@ function result() {
 	const outputBMR = document.getElementById('BMR');
 
 
-	//hide loader
 
-	//Show results 
 	document.getElementById('results').style.display = 'block';
-	//Calculate BMR
+
 
 	if (gender === 'male') {
 		let BMR = 66.47 + (13.75 * weight) + (5.003 * height) - (6.755 * age)

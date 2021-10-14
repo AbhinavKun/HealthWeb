@@ -3,7 +3,7 @@ html {
 	width: 100%;
 	height: 100%;
 	font-family: 'Josefin Sans', sans-serif;
-	
+
 }
 
 body,
@@ -118,7 +118,7 @@ a:hover {
 	background-color: transparent;
 	color: #198754;
 	font-weight: 600;
-	font-size: 0.875rem;
+	font-size: 1.05rem;
 	line-height: 0;
 	text-decoration: none;
 	transition: all 0.2s;
@@ -152,7 +152,7 @@ a:hover {
 .form-control-textarea {
 	display: block;
 	height: 14rem;
-	/* used instead of html rows to normalize height between Chrome and IE/FF */
+
 }
 
 .form-control-input:focus,
@@ -189,15 +189,14 @@ a:hover {
 }
 
 
-/**********************/
-/*     Navigation     */
-/**********************/
+
 .navbar {
 	background-color: #ffffff;
 	font-weight: 600;
-	font-size: 0.875rem;
+	font-size: 1.05rem;
 	line-height: 0.875rem;
 	box-shadow: 0 2px 6px 0 rgba(0, 0, 0, 0.05);
+
 }
 
 .navbar .navbar-brand {
@@ -213,7 +212,7 @@ a:hover {
 .navbar .logo-text {
 	color: #198754;
 	font-weight: 700;
-	font-size: 1.875rem;
+	font-size: 2.25rem;
 	line-height: 1rem;
 	text-decoration: none;
 }
@@ -221,7 +220,6 @@ a:hover {
 .offcanvas-collapse {
 	position: fixed;
 	top: 3.25rem;
-	/* adjusts the height between the top of the page and the offcanvas menu */
 	bottom: 0;
 	left: 100%;
 	width: 100%;
@@ -233,12 +231,23 @@ a:hover {
 	transition: visibility .3s ease-in-out, -webkit-transform .3s ease-in-out;
 	transition: transform .3s ease-in-out, visibility .3s ease-in-out;
 	transition: transform .3s ease-in-out, visibility .3s ease-in-out, -webkit-transform .3s ease-in-out;
+
 }
 
 .offcanvas-collapse.open {
 	visibility: visible;
 	-webkit-transform: translateX(-100%);
 	transform: translateX(-100%);
+}
+
+.offcanvas-collapse.open .nav-item {
+	text-align: center;
+
+}
+
+.offcanvas-collapse.open .contactlink {
+	text-align: center;
+
 }
 
 .navbar .navbar-nav {
@@ -260,10 +269,10 @@ a:hover {
 	color: #198754;
 }
 
-/* Dropdown Menu */
+
 .navbar .dropdown .dropdown-menu {
 	animation: fadeDropdown 0.2s;
-	/* required for the fade animation */
+
 }
 
 @keyframes fadeDropdown {
@@ -277,7 +286,6 @@ a:hover {
 }
 
 .navbar {
-	margin-top: 0.25rem;
 	margin-bottom: 0.25rem;
 	border: none;
 	background-color: #ffffff;
@@ -288,7 +296,6 @@ a:hover {
 	padding-bottom: 0.625rem;
 	color: #198754;
 	font-weight: 600;
-	font-size: 0.875rem;
 	line-height: 0.875rem;
 	text-decoration: none;
 }
@@ -302,7 +309,7 @@ a:hover {
 	background-color: #efefef;
 }
 
-/* end of dropdown menu */
+
 
 .navbar .navbar-toggler {
 	padding: 0;
@@ -311,9 +318,6 @@ a:hover {
 }
 
 
-/*****************/
-/*    Header     */
-/*****************/
 .header {
 	position: relative;
 	overflow: hidden;
@@ -681,11 +685,17 @@ a:hover {
 	.bmileft {
 		margin-left: -75px;
 	}
+
+	.nav-item {
+
+		font-size: larger;
+
+	}
 }
 
 @media (min-width: 768px) {
 
-	/* Header */
+
 	.header {
 		padding-top: 11rem;
 		padding-bottom: 5em;
@@ -732,13 +742,12 @@ a:hover {
 
 }
 
-/* end of min-width 768px */
 
 
-/* Min-width 992px */
+
 @media (min-width: 992px) {
 
-	/* General Styles */
+
 	.h2-heading {
 		width: 35.25rem;
 		margin-right: auto;
@@ -751,10 +760,7 @@ a:hover {
 		margin-left: auto;
 	}
 
-	/* end of general styles */
 
-
-	/* Navigation */
 	.navbar {
 		padding-top: 1.75rem;
 		background-color: #ffffff;
@@ -816,10 +822,9 @@ a:hover {
 		margin-left: 1rem;
 	}
 
-	/* end of navigation */
 
 
-	/* Header */
+
 	.header {
 		text-align: left;
 	}
@@ -842,27 +847,17 @@ a:hover {
 		margin-right: 0.5rem;
 	}
 
-	/* end of header */
 
-
-	/* Statistics */
 	.counter .purecounter {
 		font-size: 4rem;
 		line-height: 4rem;
 	}
 
-	/* end of statistics */
 
-
-	/* Introduction */
 	.basic-1 h2 {
 		width: 90%;
 	}
 
-	/* end of introduction */
-
-
-	/* Details 1 */
 	.basic-2 .decoration-star {
 		top: 260px;
 		left: -150px;
@@ -873,18 +868,14 @@ a:hover {
 		margin-bottom: 0;
 	}
 
-	/* end of details 1 */
 
 
-	/* Services */
+
 	.cards-1 .text-container {
 		margin-bottom: 0;
 	}
 
-	/* end of services */
 
-
-	/* Details 2 */
 	.basic-3 .decoration-star {
 		top: 260px;
 		right: -150px;
@@ -895,20 +886,7 @@ a:hover {
 		text-align: right;
 	}
 
-	/* end of details 2 */
 
-
-	/* Invitation */
-	.basic-4 h4 {
-		width: 48rem;
-		margin-right: auto;
-		margin-left: auto;
-	}
-
-	/* end of invitation */
-
-
-	/* Projects */
 	.cards-2 .card {
 		display: inline-block;
 		width: 292px;
@@ -917,10 +895,7 @@ a:hover {
 	}
 
 
-	/* end of projects */
 
-
-	/* Contact */
 	.form-1 {
 		text-align: left;
 	}
@@ -946,7 +921,6 @@ a:hover {
 
 
 
-/* Min-width 1200px */
 @media (min-width: 1200px) {
 
 	.container {
@@ -985,10 +959,6 @@ a:hover {
 		text-align: right;
 	}
 
-	/* end of header */
-
-
-	/* Statistics */
 	.counter .counter-cell {
 		margin-right: 3.5rem;
 		margin-left: 3.5rem;
@@ -1008,10 +978,6 @@ a:hover {
 		line-height: 4.5rem;
 	}
 
-	/* end of statistics */
-
-
-	/* Details 1 */
 	.basic-2 .decoration-star {
 		top: 140px;
 		left: -200px;
@@ -1027,10 +993,6 @@ a:hover {
 		width: 90%;
 	}
 
-	/* end of details 1 */
-
-
-	/* Services */
 	.cards-1 .text-container {
 		margin-top: 2rem;
 
@@ -1042,10 +1004,7 @@ a:hover {
 	}
 
 
-	/* end of services */
 
-
-	/* Details 2 */
 	.basic-3 .decoration-star {
 		top: 140px;
 		right: -200px;
@@ -1061,20 +1020,11 @@ a:hover {
 		width: 95%;
 	}
 
-	/* end of details 2 */
-
-
-	/* Projects */
 	.cards-2 .card {
 		width: 350px;
 	}
 
 
-
-	/* end of projects */
-
-
-	/* Testimonials */
 	.slider-1 .quotes-decoration {
 		left: 170px;
 		width: 220px;
@@ -1086,10 +1036,6 @@ a:hover {
 		margin-left: auto;
 	}
 
-	/* end of testimonials */
-
-
-	/* Contact */
 	.form-1 .decoration-star {
 		top: 140px;
 		left: -300px;
@@ -1110,17 +1056,14 @@ a:hover {
 		width: 82%;
 	}
 
-	/* end of contact */
-
 
 
 }
 
 .fieldsett {
-	width: 600px;
 	margin: 20px 0 0 0px;
 	padding: 5px;
-	font-size: 17px;
+	font-size: 19px;
 	text-align: center;
 }
 
@@ -1138,7 +1081,8 @@ a:hover {
 .inputt {
 	margin-top: 10px;
 	text-align: center;
-	width: 128px;
+	width: 100px;
+	color: #44434a;
 
 }
 
@@ -1156,8 +1100,9 @@ a:hover {
 }
 
 .bmiheading {
-	font-size: 28px;
-	margin: 20px;
+	font-size: 30px;
+	margin: 20px 0px;
+	font-weight: 800;
 }
 
 .text-red {
@@ -1177,17 +1122,14 @@ a:hover {
 	flex-direction: column;
 	align-items: center;
 	text-align: center;
-	margin-top: -30px;
+	margin-top: -40px;
 }
 
 .containerr {
 
 	box-sizing: border-box;
 	padding: 16px 0px;
-	margin: 8px;
-	background: white;
-	box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 2px rgba(0, 0, 0, 0.24);
-	border-radius: 4px;
+	margin: 20px;
 }
 
 .title {
@@ -1198,13 +1140,14 @@ a:hover {
 .instructions {
 	margin-bottom: 16px;
 	opacity: 0.9;
+	font-size: 20px;
 }
 
 .inputs {
 	border-top: 1px #ebebeb solid;
 	padding: 0px 16px;
 	display: flex;
-	justify-content: space-around;
+	justify-content: space-evenly;
 	flex-wrap: wrap;
 }
 
@@ -1236,8 +1179,10 @@ a:hover {
 	padding: 0px 16px;
 }
 
-.title {
-	margin-top: 16px;
+.titlee {
+	margin-bottom: 30px;
+	margin-top: -40px;
+	font-size: 48px;
 }
 
 .stats {
